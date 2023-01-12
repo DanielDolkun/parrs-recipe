@@ -14,13 +14,12 @@ const RecipePage = () => {
   const { id } = useParams()
   const [arrived, setArrived] = useState(false)
 
-  const fetchData = async () => {
-    const res = await getSingleRecipe(id)
-    setDetails(res) // title/ image/ summary/ extendedIngredients -> name, amount/ steps -> number /step
-    setArrived(true)
-  }
-
   useEffect(() => {
+    const fetchData = async () => {
+      const res = await getSingleRecipe(id)
+      setDetails(res) // title/ image/ summary/ extendedIngredients -> name, amount/ steps -> number /step
+      setArrived(true)
+    }
     fetchData()
   }, [id])
 
