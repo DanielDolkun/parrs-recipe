@@ -22,7 +22,7 @@ export const SearchPageContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to right, rgba(69, 50, 10, 0.834), #292929);
+  background: linear-gradient(to right, rgba(149, 122, 67, 0.834), #292929);
   width: 100%;
   height: 100%;
 `
